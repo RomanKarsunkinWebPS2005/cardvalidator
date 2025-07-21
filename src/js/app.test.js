@@ -1,16 +1,6 @@
 // import demo from "./app";
 import { isValidCardNumber, getCardType } from "./core";
 
-describe("Пример теста", () => {
-  test.each([
-    { str: "Hello!", expected: "Demo: Hello!" },
-    { str: "", expected: "Demo: " },
-    { str: 100, expected: "Demo: 100" },
-  ])("demo($str)", ({ str, expected }) => {
-    expect(demo(str)).toBe(expected);
-  });
-});
-
 describe("Проверка алгоритма Луна", () => {
   test.each([
     ["4111111111111111", true], // Visa
