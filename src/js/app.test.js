@@ -1,4 +1,4 @@
-import demo from "./app";
+// import demo from "./app";
 import { isValidCardNumber, getCardType } from "./core";
 
 describe("Пример теста", () => {
