@@ -1,6 +1,7 @@
 // Проверка номера карты по алгоритму Луна
 export function isValidCardNumber(number) {
   const str = String(number).replace(/\D/g, "");
+  if (/^(\d)\1+$/.test(str)) return false; // все цифры одинаковые
   let sum = 0;
   let shouldDouble = false;
   for (let i = str.length - 1; i >= 0; i--) {
